@@ -1,0 +1,147 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+/**********************************************************
+The following line may be redundant, but does no harm.    */
+main, header, footer, nav, article { display: block; }
+
+  /* two groups of menu links: main and sub */ 
+nav ul { list-style: none; text-align: center }
+
+  /* appears below logo on every page */
+nav#mainMenu { width: 100%; }
+
+company logo appears at the top of each page */
+div#logo { padding: 10px 0 0 5px; }
+
+/*********************************
+two kinds of menus: main and sub */
+
+
+/*******************************************************************
+only home page has text at left and image at right in content area */
+article#textLeft {
+  float: left;
+  width: 63%;
+  margin-left: 1em;
+}
+
+div#video {
+  float: left;
+  width: 33%;
+  margin: 20px 0 10px;
+  text-align: center;
+}
+
+/*******************************************************
+pages with submenus at the left have text at the right */
+article#textRight {
+  float: left;
+  width: 750px;
+  margin-left: 10px;
+}
+
+/*****************************************************
+some pages may contain only text following a heading */
+article#textOnly {
+  float: left;
+  width: 95%;
+  margin-left: 1em;
+}
+
+/* for the always-visible main menu options */
+.Links li {
+  float: left;
+  width: 160px;
+  font-size: 1.0em;
+  /* text-align: center; */
+  list-style: none;
+}
+
+.Links li:last-child {
+  width: 132px;
+  border-right-width: 0;
+}
+ 
+/* for all links for all menu options */
+.Links li a, 
+.Links li span 
+{
+  display: block;
+  height: 25px;
+  line-height: 25px;
+  background-color:  #ee6e73;
+  color: #FFF;
+  text-decoration: none;
+}
+
+.Links li a:hover {
+  background-color: #f04147;
+  color: #FFF;
+}
+
+/* for the dropdown menu options */
+.Links div {
+  position: absolute;
+  background-color:  #ee6e73;
+  visibility: hidden;
+}
+
+.Links div a {
+  display: block;
+  width: 124px;
+  margin-top: 0px;
+  padding-left: 1px;
+  background-color: #f0cad2;
+  color:  #291a1b;
+  text-align: left;
+}
+/********************************************
+move the site map list away from the border */
+article#siteMap { margin-left: 10px; }
+
+/*****************************************************************
+list structure must be restored for the site map page, since all
+padding and margins have been removed by the global settings     */
+article#siteMap ol,
+article#siteMap ul {
+  margin: 0 30px 10px;
+}
+
+/********************************************
+footer now contains just a copyright notice */
+footer {
+  clear: left;
+  width: 100%;
+  height: 20px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  line-height: 25px;
+  background-color: #ee6e73;
+  color: rgba(20, 5, 5, 0.952);
+  text-align: center;
+  /* font-weight: bold; */
+  font-size: .9em;
+}
+
+
+
+body {
+  width: 1400px;
+  height: 700px;
+  margin: 10px auto 0 auto;
+  /* border: 3px solid rgb(44, 40, 40); */
+  border-radius: 10px;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: 1em;
+  
+} 
+
+main {
+  height: 623px;
+}
+
+/*******************************************************************
+
