@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <base href="/project/">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
+
+    <link rel="stylesheet" href="desk_top.css">
+    <link rel="stylesheet" href="tab_let.css"
+          media="screen and (max-width: 900px)">
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <script src="infoValidate.js"></script>
+    <script src="infoProcess.js"></script>
+    <script src="dropdown.js"></script>
+    <script src="image_rotate.js"></script>
+    <!--JavaScript at end of body for optimized loading-->
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+
+    <title>WeTalk!</title>
+  </head>
+
+
+  <body onload="startRotation()">
+    <header>
+      <nav onmouseout="hide()">
+        <ul class="Links">
+          <li><img src="logo.png" alt="WeTalk" width="56" height="56"></li>
+          <li ><a href="index.html" class = "active" onmouseover="show('m1')">Log In</a></li>
+    
+          <li>
+            <span onmouseover="show('m2')">Chat</span> 
+              <div id="m2" onmouseover="show('m2')">
+                <a href="Chat.html">New Chat</a>
+                <a href="ChatHistory.html">Chat History</a>
+              </div>
+          </li>
+        
+          <li>
+            <span onmouseover="show('m3')">Contacts</span> 
+              <div id="m3" onmouseover="show('m3')">
+                <a href="Contacts.html">Add Contact</a>
+                <a href="contactList.html">Contact List</a>
+              </div>
+          </li>
+      
+    
+          <li>
+            <span onmouseover="show('m4')">Discover</span> 
+              <div id="m4" onmouseover="show('m4')">
+                <a href="Discover.html">Yourself</a>
+                <a href="FriendMom.html">Others</a>
+              </div>
+          </li>
+      
+          <li><a href="AboutUs.html">About Us</a></li>
+          <!-- <li><a style= "text-align: right; color:black" href="WeTalk.html">Log In</a></li> -->
+            
+      
+        </ul>
+    </nav>
+    
+    </header>
+    
+    <main style="height: 618px"> 
+      <article id="textLeft">
+        <h3>Welcome to WeTalk!</h3>
+        <li>Free messaging and calling </li>
+        <li>Connecting a billion people with calls, chats, and more </li>
+        <br><br><br>
+        <p>
+          <br><br><br>
+          <div class="row">
+            <form class="col s12" height = "12">
+              <div class="row">
+                <div class="input-field col s6">
+                  <input placeholder="" id="first_name" type="text" class="validate">
+                  <label for="first_name">User Name</label>
+                </div>
+                <div class="input-field col s6">
+                  <input placeholder="" id="last_name" type="text" class="validate">
+                  <label for="last_name">Password</label>
+                </div>
+              </div>
+            <button class="btn waves-effect waves-light" type="submit" name="action">Log In
+              <i class="material-icons right">send</i>
+              </button>
+            </form>
+  
+            <a href="Reset.html">Reset Password</a>
+            <br>
+            <a href="register.html">New User</a>
+          
+        </div>
+        </p>
+      </article>
+
+      <br><br><br>
+      <div id="image">
+        <img id="placeholder" src=""
+             alt="Let's connect via WeTalk!"
+             width="250" height="250">
+      </div>
+
+    </main>
+
+    <footer>
+      CopyRight @ WeTalk
+    </footer>
+
+  </body>
+
+</html>
